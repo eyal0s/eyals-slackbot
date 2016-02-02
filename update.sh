@@ -2,7 +2,7 @@
 
 echo "Updating Repo..."
 git add .
-message="foo"
+message=$1
 echo $message
 git commit -m "${message}"
 git push origin master
