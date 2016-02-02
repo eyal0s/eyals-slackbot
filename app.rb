@@ -9,10 +9,7 @@ get '/' do
 end
 
 post '/gateway' do
-  message = params[:text].gsub(params[:trigger_word], '').strip
-
-  # action, repo = message.split('_').map {|c| c.strip.downcase }
-  # repo_url = "https://api.github.com/repos/#{repo}"
+  message = params[:text]
 
   if message['token'] == slack_tok
     respond_message("bad token")
