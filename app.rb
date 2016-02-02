@@ -3,6 +3,7 @@ require 'httparty'
 require 'json'
 
 slack_tok = "zqhGFeSIMpu5M3zC1NCMXSy5"
+
 get '/' do
   "Hello world"
 end
