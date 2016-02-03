@@ -5,7 +5,7 @@ require 'json'
 slack_tok = "zqhGFeSIMpu5M3zC1NCMXSy5"
 
 get '/' do
-  "Hello world"
+  "Eyal's Slackbot"
 end
 
 post '/gateway' do
